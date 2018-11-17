@@ -1,0 +1,10 @@
+This is a sample
+
+Opening files using the with statement is generally recommended because it ensures that open file descriptors are closed automatically after program execution leaves the context of the with statement. Internally, the above code sample translates to something like this: f = open('hello.txt', 'w')
+try:
+    f.write('hello, world')
+finally:
+    f.close() You can already tell that this is quite a bit more verbose. Note that the try...finally statement is significant. It wouldn’t be enough to just write something like this: f = open('hello.txt', 'w')
+f.write('hello, world')
+
+Bader, Dan. Python Tricks: A Buffet of Awesome Python Features (pp. 31-32). Dan Bader (dbader.org). Kindle Edition. 
