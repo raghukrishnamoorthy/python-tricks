@@ -6,4 +6,7 @@ def foo(required, *args, **kwargs):
         print(newargs)
     if kwargs:
         print(kwargs)
+    
+
+
 
